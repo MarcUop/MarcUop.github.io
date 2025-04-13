@@ -279,7 +279,7 @@ h6,
     height: 3px;
 }
 
-.section-title::after {
+/* .section-title::after {
     position: absolute;
     content: "";
     width: 6px;
@@ -288,22 +288,22 @@ h6,
     background: #FFFFFF;
     -webkit-animation: section-title-run 5s infinite linear;
     animation: section-title-run 5s infinite linear;
-}
+} */
 
 .section-title.section-title-sm::after {
     width: 4px;
     height: 3px;
 }
 
-.section-title.text-center::after {
+/* .section-title.text-center::after {
     -webkit-animation: section-title-run-center 5s infinite linear;
     animation: section-title-run-center 5s infinite linear;
-}
+} */
 
-.section-title.section-title-sm::after {
+/* .section-title.section-title-sm::after {
     -webkit-animation: section-title-run-sm 5s infinite linear;
     animation: section-title-run-sm 5s infinite linear;
-}
+} */
 
 @-webkit-keyframes section-title-run {
     0% {
@@ -589,5 +589,22 @@ h6,
 }
 
 .team-img {
-    height: 400px; /* Adjust the height as needed */
+    height: 150px; /* Adjust the height as needed */
 }
+
+
+.bulleted > div {
+    position: relative;
+    padding-left: 40px;
+    color: black;
+  }
+  
+  .bulleted > div::before {
+    content: "📝";  /* Unicode bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #a92200;  /* Blue bullet, you can change this */
+    font-size: 20px;
+    line-height: 1;
+  }
